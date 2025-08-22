@@ -5,7 +5,7 @@ import { fetchNoteById } from "@/lib/api";
 import { useParams } from "next/navigation";
 import css from "./NoteDetails.module.css";
 
-export default function NoteDetails() {
+export default function NoteDetailsClient () {
   const { id } = useParams<{ id: string }>();
   
   const { data: note, isLoading, isError } = useQuery({
