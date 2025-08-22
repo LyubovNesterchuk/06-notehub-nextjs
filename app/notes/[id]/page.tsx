@@ -24,20 +24,3 @@ await queryClient.prefetchQuery({
     </HydrationBoundary>
   );
 }
-
-// export default async function NoteDetails({ params }: Props) {
-//   const queryClient = new QueryClient();
-//   const noteId = Number(params.id);
-
-//   await queryClient.prefetchQuery({
-//     queryKey: ["note", noteId],
-//     queryFn: () => fetchNoteById(noteId),
-//   });
-
-//   return (
-//     <HydrationBoundary state={dehydrate(queryClient)}>
-//       <NoteDetailsClient id={noteId} /> 
-//     </HydrationBoundary>
-//   );
-// }
-  // const noteId = Number(id);
