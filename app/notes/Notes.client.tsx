@@ -8,10 +8,11 @@ import { fetchNotes, FetchNotesResponse } from "@/lib/api";
 import css from './Notes.module.css'
 import SearchBox from "@/components/SearchBox/SearchBox";
 import NoteForm from "@/components/NoteForm/NoteForm";
-import Modal from "@/components/Module/Modal";
+
 import Pagination from "@/components/Pagination/Pagination";
 import NoteList from "@/components/NoteList/NoteList";
 import { Toaster } from "react-hot-toast";
+import Modal from "@/components/Modal/Modal";
 
 
 export default function Notes() {
