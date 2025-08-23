@@ -29,6 +29,7 @@ export default function Notes() {
   
   const updateSearchQuery = useDebouncedCallback((value: string) => {
     setSearchQuery(value);
+     setCurrentPage(1);
   }, 500);
 
   const { data, isLoading, isError } = useQuery<FetchNotesResponse>({
